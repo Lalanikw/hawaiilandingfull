@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import './ContactForm.css'
-import { postContactData } from '../../travelsite/src/api/contact/route';
 
 export default function ContactForm() {
   const [fullname, setFullname] = useState("");
