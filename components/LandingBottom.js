@@ -6,9 +6,9 @@ import dynamic from 'next/dynamic';
 export const images = [
   { title: "Waikiki Beach", subtitle: "Honolulu shoreline with gentle waves, ideal for beginners and sunbathers.", Image: '/beach.jpg' },
   { title: "Koko Crater", subtitle: "A challenging hike with rewarding panoramic views", Image: '/koko.jpg' },
-  { title: "Waikiki Skyline", subtitle: "View of the Waikiki town from Diamon Head crater", Image: '/Waikiki.jpg' },
+  { title: "Waikiki Skyline", subtitle: "View of the Waikiki town from Diamon Head crater", Image: '/Waikiki.JPG' },
   { title: "Hanauma Bay", subtitle: "A perfect spot for Snorkeling, swimming, diving and sunbathing.", Image: '/hanauma.jpg' },
-  { title: "Surfer", subtitle: "Waikiki draws surf enthusiasts from around the world.", Image: '/surf.jpg' }
+  { title: "Surfer", subtitle: "Waikiki draws surf enthusiasts from around the world.", Image: '/surf.JPG' }
 ];
 
 const DynamicCarousel = dynamic(() => import('./Carousel'), { ssr: false });
