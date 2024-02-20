@@ -11,12 +11,13 @@ export default function ContactForm() {
   const [success, setSuccess] = useState(false);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    console.log("Full name: ", fullname);
-    console.log("Email: ", email);
-    console.log("Message: ", message);
+  console.log("Full name: ", fullname);
+  console.log("Email: ", email);
+  console.log("Message: ", message);
 
+  try {
     const res = await fetch("api/contact", {
       method: "POST",
       headers: {
@@ -29,17 +30,23 @@ export default function ContactForm() {
       }),
     });
 
-    const { msg, success } = postContactData(fullname, email, message);
+    const { msg, success } = await res.json();
 
-  setError(msg);
-  setSuccess(success);
+    setError(msg);
+    setSuccess(success);
 
     if (success) {
       setFullname("");
       setEmail("");
       setMessage("");
     }
-  };
+  } catch (error) {
+    console.error("Error posting contact data:", error);
+    setError(["An error occurred while submitting the form."]);
+    setSuccess(false);
+  }
+};
+
 
   return (
     <div className="">
