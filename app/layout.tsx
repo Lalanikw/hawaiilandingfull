@@ -25,6 +25,10 @@ export default function RootLayout({
     <>
       <html lang="en">
         <head>
+         <title>{metadata.title}</title>
+          <meta name="description" content={metadata.description} />
+          
+          <link rel="icon" href='/logo.jpg'/>
           <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" />
               <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Raleway:ital,wght@0,100..900;1,100..900&family=Reggae+One&display=swap" rel="stylesheet">
