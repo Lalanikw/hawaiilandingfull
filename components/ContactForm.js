@@ -11,13 +11,13 @@ export default function ContactForm() {
   const [success, setSuccess] = useState(false);
 
   const handleSubmit = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  console.log("Full name: ", fullname);
-  console.log("Email: ", email);
-  console.log("Message: ", message);
+    console.log("Full name: ", fullname);
+    console.log("Email: ", email);
+    console.log("Message: ", message);
 
-  try {
+
     const res = await fetch("api/contact", {
       method: "POST",
       headers: {
@@ -40,12 +40,7 @@ export default function ContactForm() {
       setEmail("");
       setMessage("");
     }
-  } catch (error) {
-    console.error("Error posting contact data:", error);
-    setError(["An error occurred while submitting the form."]);
-    setSuccess(false);
-  }
-};
+  };
 
 
   return (
@@ -95,7 +90,7 @@ export default function ContactForm() {
             <div
               className={`${
                 success ? "text-green-800" : "text-red-600"
-              } px-5 py-2`} > {e}
+              } px-5 py-2`} > {e} error
             </div>
           ))}
       </div>

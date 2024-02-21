@@ -4,7 +4,7 @@ import {NextResponse} from "next/server";
 import mongoose from "mongoose";
 
 export async function POST(req) {
-  try {
+
     const { fullname, email, message } = await req.json();
 
     // Log a message when the JSON is successfully parsed
@@ -22,18 +22,16 @@ export async function POST(req) {
         msg: ['Message sent successfully'],
         success: true,
       });
-    } catch (connectError) {
-      console.error('Error connecting to MongoDB:', connectError);
-      return NextResponse.json({
-        errors: ['Error connecting to MongoDB'],
-        success: false,
-      });
+    } catch (error) {
+      if (error instanceof mongoose.Error.ValidationError) {
+        let errorList = [];
+        for (let e in error.errors) {
+          errorList.push(e.message);
+        }
+        return NextResponse.json({ msg: errorList })
+      }
+      else {
+        return NextResponse.json(error)
+      }
     }
-  } catch (jsonError) {
-    console.error('Error parsing JSON:', jsonError);
-    return NextResponse.json({
-      errors: ['Error parsing JSON'],
-      success: false,
-    });
   }
-}
