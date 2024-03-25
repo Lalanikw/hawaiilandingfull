@@ -25,7 +25,11 @@ export default function RootLayout({
     <>
       <html lang="en">
         <head>
+<<<<<<< HEAD
            <title>{metadata.title}</title>
+=======
+         <title>{metadata.title}</title>
+>>>>>>> d6cf09985549a064206636d446189c9341cf9bed
           <meta name="description" content={metadata.description} />
           
           <link rel="icon" href='/logo.jpg'/>
