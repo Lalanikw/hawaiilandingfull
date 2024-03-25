@@ -17,7 +17,6 @@ export default function ContactForm() {
     console.log("Email: ", email);
     console.log("Message: ", message);
 
-
     const res = await fetch("api/contact", {
       method: "POST",
       headers: {
@@ -31,14 +30,13 @@ export default function ContactForm() {
     });
 
     const { msg, success } = await res.json();
-
     setError(msg);
     setSuccess(success);
 
     if (success) {
       setFullname("");
       setEmail("");
-      setMessage("");
+      setMessagemessage("");
     }
   };
 
@@ -90,7 +88,7 @@ export default function ContactForm() {
             <div
               className={`${
                 success ? "text-green-800" : "text-red-600"
-              } px-5 py-2`} > {e} error
+              } px-5 py-2`} > {e} 
             </div>
           ))}
       </div>

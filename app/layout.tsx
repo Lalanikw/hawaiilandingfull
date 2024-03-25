@@ -33,11 +33,7 @@ export default function RootLayout({
 <link rel="preconnect" href="https://fonts.gstatic.com" />
               <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Raleway:ital,wght@0,100..900;1,100..900&family=Reggae+One&display=swap" rel="stylesheet">
           </link>
-           <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    />
+           
           <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
           <style>
             {`

@@ -7,14 +7,8 @@ export async function POST(req) {
 
     const { fullname, email, message } = await req.json();
 
-    // Log a message when the JSON is successfully parsed
-    console.log('JSON parsed successfully:', { fullname, email, message });
-
     try {
       await connectDB();
-      console.log('MongoDB connected successfully');
-
-      // Create a new contact document in MongoDB
       await Contact.create({ fullname, email, message });
 
       // Return a success response
@@ -26,12 +20,13 @@ export async function POST(req) {
       if (error instanceof mongoose.Error.ValidationError) {
         let errorList = [];
         for (let e in error.errors) {
-          errorList.push(e.message);
+          errorList.push(error.errors[e].message);
         }
+        console.log(errorList);
         return NextResponse.json({ msg: errorList })
       }
       else {
-        return NextResponse.json(error)
+        return NextResponse.json({ msg: ["Unable to send message."] })
       }
     }
   }
