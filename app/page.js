@@ -10,17 +10,24 @@ export default function Home() {
 
       <div className="bg-gray-200 shadow-md hover:bg-gray-300 p-2 mt-3">
           <div className="bg-gray-200">
-              <h1 className="bg-gray-200 text-center text-green-600 lg:text-4xl md:text-2xl sm:text-lg ">Excape to Hawaii, where paradise meets the adventure &#127802; </h1>
-              <h3 className="bg-gray-200 text-justify lg:text-xl md:text-lg sm:text-md p-2 m-2">Picture yourself on sun-kissed beaches, the soft, golden sand between your toes, and the
-                soothing sound of waves in the background.
-                Explore lush rainforests, hike to breathtaking viewpoints, and discover vibrant marine life while snorkeling in crystal
-                  clear waters. Immerse yourself in the captavating hula performance and relish the island's unique cuisine.</h3>
-                
-              <div>
-                  {/* <Link to="/Explore">
-                    <button to="/Explore.js" className='Plan-button'> Explore Hawaii &#10132; </button>
-                  </Link> */}
-                </div>    
+          <h1 className="bg-gray-200 text-center text-green-600 lg:text-4xl md:text-2xl sm:text-lg ">
+            Excape to Hawaii, where paradise meets the adventure &#127802; </h1>
+          <h3 className="bg-gray-200 text-justify lg:text-xl md:text-lg sm:text-md p-2 m-2">Imagine yourself
+            basking on sun-kissed beaches, with soft, golden sand gently caressing
+            your toes while the soothing sound of waves serenades you in the background. Embark on an adventure
+            through lush rainforests, where vibrant flora and fauna await, and hike
+            to breathtaking viewpoints that offer panoramic vistas of paradise. Dive into crystal-clear waters
+            to snorkel amidst vibrant marine life, immersing yourself in an underwater
+            wonderland.
+          </h3>
+          <h3 className="bg-gray-200 text-justify lg:text-xl md:text-lg sm:text-md p-2 m-2">Indulge in the rich
+            cultural tapestry of Hawaii by witnessing captivating hula performances
+            that embody the spirit of the islands. Delight your taste buds with the unique and flavorful cuisine
+            that reflects the diverse cultural influences of Hawaii, from traditional
+            Hawaiian dishes to fusion creations that will tantalize your palate. Whether you're seeking relaxation,
+            adventure, or cultural exploration, Hawaii offers an unparalleled experience that will leave you enchanted
+            and rejuvenated.
+          </h3>
           </div>
             
       </div>

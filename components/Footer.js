@@ -14,14 +14,14 @@ const Footer = () => {
                 <h2 className="text-xl font-semibold mb-4 text-green-400">Follow Us</h2>
                 <ul className="flex gap-4 text-center">
                   <li>
-              <SocialIcon  target="_blank" url="https://facebook.com" />
-                  </li>
-                  <li>
-                    <SocialIcon target="_blank" url="https://instagram.com" />
-                  </li>
-                  <li>
-                    <SocialIcon target="_blank" url="https://youtube.com" />
-                  </li>
+              <SocialIcon target="_blank" url="https://www.youtube.com/@farawesomeworld" />
+            </li>
+            <li>
+              <SocialIcon target="_blank" url="https://www.instagram.com/far_awesome_world?igsh=bDRkY3pzNzBubzg3&utm_source=qr" />
+            </li>
+            {/* <li>
+              <SocialIcon target="_blank" url="https://www.instagram.com/far_awesome_world?igsh=bDRkY3pzNzBubzg3&utm_source=qr" />
+            </li> */}
                 </ul>
               </div>
           </div>
