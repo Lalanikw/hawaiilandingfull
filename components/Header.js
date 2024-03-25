@@ -12,7 +12,7 @@ function Header() {
             <div className='flex gap-3'>
                           
                           <div className='p-3'>
-                                  <Link href='/' passHref><h1 className='stroke-lime-300 lg:text-7xl md:text-4xl sm:text-2xl font-semibold hover:text-green-200'>Hawaii Landing </h1></Link>
+                                  <Link href='/' passHref><h1 className='stroke-lime-300 lg:text-7xl md:text-4xl sm:text-2xl font-semibold hover:text-green-200'>Hawaii Landing &#127802; </h1></Link>
                                   
                            </div>
 
