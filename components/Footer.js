@@ -25,7 +25,7 @@ const Footer = () => {
                 </ul>
               </div>
           </div>
-            <div className="text-green-400">
+            <div className="text-green-400 text-2xl font-semibold ">
               <p> @ Hawaii-Landing 2024. All rights reserved.
               </p>
             </div>
