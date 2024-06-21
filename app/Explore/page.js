@@ -12,10 +12,16 @@ const page = () => {
 
     return (
       <div className="text-3xl md:text-2xl sm:text-xl font-semibold text-center mt-36 bg-white ">
-          <h1 className='text-green-500 pt-4 sm:text-xl'>Paradise Unveiled</h1>
-          <h5 className="text-base md:text-lg sm:text-lg text-indigo-300 mb-4 mt-5 text-center"> History | Beaches | Water Sports | Culture | Cousine </h5>
+          <h1 className='text-green-500 pt-5 sm:text-2xl'>Paradise Unveiled</h1>
+          <h5 className="text-base md:text-lg sm:text-lg text-indigo-300 mb-4 mt-5 text-center">
+             History | Beaches | Water Sports | Culture | Cousine </h5>
           
-         <p className='leading-relaxed mb-2 text-justify lg:text-xl md:text-xl sm:text-md p-1'>Exploring Hawaii is an odyssey that goes beyond the surface, inviting travelers to connect with nature, immerse themselves in culture, and embrace the Aloha spirit. Whether you're hiking to hidden waterfalls, savoring local delicacies, or simply soaking in the beauty of a sunset, Hawaii's allure is an invitation to experience paradise on Earth—a realm where dreams become reality and memories are etched forever.
+          <p className='leading-relaxed mb-2 text-justify lg:text-xl md:text-xl sm:text-md p-1'>Exploring Hawaii is an
+             odyssey that goes beyond the surface, inviting travelers to connect with nature,
+             immerse themselves in culture, and embrace the Aloha spirit. Whether you're hiking to
+             hidden waterfalls, savoring local delicacies, or simply soaking in the beauty of a sunset,
+             Hawaii's allure is an invitation to experience paradise on Earth—a realm where dreams become
+             reality and memories are etched forever.
           </p>
           
           <div className='py-5 m-2'>
@@ -27,10 +33,12 @@ const page = () => {
                         <div className='p-3'>
                         <h1 className="text-xl font-semibold mb-1 text-left text-green-800">Riding Waves</h1>
                         <h2 className="text-base font-medium text-indigo-300 mb-1 text-left">Queen's | Sandy | Waikiki beaches</h2>
-                      <p className="leading-relaxed mb-2 text-justify lg:text-xl md:text-xl sm:text-md">Riding the waves at Queen's Beach, Sandy Beach,
-                         and Waikiki Beach offers an exhilarating experience for water enthusiasts of all levels. With its gentle breaks and consistent swells,
-                         Queen's Beach is ideal for beginners looking to catch their first wave, while Sandy Beach's powerful shore break provides a thrilling
-                         challenge for experienced surfers and boogie boarders alike.
+                      <p className="leading-relaxed mb-2 text-justify lg:text-xl md:text-xl sm:text-md">⁤Wave rides at
+                         Queen's, Sandy, and Waikiki Beaches are an exciting adventure for aqua lovers of every stage.
+                         ⁤⁤With its gentle crashing and steady surges, Queen's Beach is perfect for starters seeking to
+                         grasp their initial ripple. ⁤⁤On the contrary, Sandy Beach's strong shore break presents an
+                         exhilarating dare for more seasoned surfers and bodyboarders in the same way!
+                         
                       </p>
                       <p className="leading-relaxed mb-2 text-justify lg:text-xl md:text-xl sm:text-md">Waikiki Beach, steeped in historic surfing traditions,
                          holds a special place in the hearts of surfers worldwide. Named after Duke Kahanamoku, the legendary Hawaiian waterman and Olympic swimmer
